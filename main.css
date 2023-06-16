@@ -1,0 +1,124 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.container {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.app {
+	padding: 20px;
+	background: linear-gradient(167.44deg, #29B2DD 0%, #33AADD 47.38%, #2DC8EA 100%);
+	border-radius: 40px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	width: 350px;
+	text-align: center;
+}
+
+.app #city-input input {
+	border: none;
+	border-radius: 5px;
+	padding: 3px 5px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.app #city-input input:focus {
+	outline: none;
+	border: 1px solid rgb(16, 64, 132);
+	
+}
+
+.app #city-input button, .app .weather-main .div-city button {
+	border: none;
+	padding: 3px 8px;
+	border-radius: 5px;
+	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.app #city-input button:hover, .app .weather-main .div-city button:hover {
+	background-color:rgba(16, 64, 132, 0.5);
+	color: #fff;
+}
+
+.app .weather-wrapper {
+	text-align: center;
+}
+
+.app .weather-main .div-city {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+
+.app .weather-main .div-city button {
+	margin-right: 3px;
+}
+
+.app .weather-main .div-city button.active {
+	background-color:rgba(16, 64, 132, 0.5);
+	color: #fff;
+}
+
+.app .weather-main .weather-main-city {
+	text-align: start;
+	font-weight: 600;
+	font-size: 22px;
+}
+
+.app .weather-main p {
+	padding: 5px;
+}
+
+.app .weather-main .main-temp {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.app .weather-additional{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 20px;
+	background-color: rgba(16, 64, 132, 0.5);
+}
+
+.app .weather-additional p {
+	padding: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.app .weather-additional P img{
+	padding-right: 5px;
+}
+
+.app .forecast-wrapper h2 {
+	text-align: left;
+	padding-top: 10px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.app .forecast-wrapper .forecast-wrapper-day{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+ 
+.app .forecast-wrapper .forecast-wrapper-day .currentDay {
+	font-weight: 600;
+}
